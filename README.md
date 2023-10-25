@@ -1,28 +1,9 @@
-# Decentralized voting application on Ethereum Blockchain
+This is a voting dapp created for our blockchain assignment.
 
+In this app, we can create elections simply by passing an array of Contestants and the duration that this election should be held for.
 
-To run the code, you need to run the following commands. 
+After the elections start, voters can vote using their account. Once a vote has been registered, the voter can't vote again.
 
-```shell
-npm install
-```
+Technologies used: React.js, TailwindCSS, Solidity, Hardhat and Ether.
 
-You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
-
-
-```shell
-npx hardhat compile
-npx hardhat run --network volta scripts/deploy.js
-```
-
-Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. 
-You can also use another blockchain by writing the blockchain's endpoint in hardhat-config. 
-
-Once you have pasted your private key and contract address in the .env file, simply run command 
-
-```shell
-node index.js
-```
-
-and go to http://localhost:3000 to interact with the decentralized voting application.
-
+Note: Not uploading the .env file was a conscious decision, as information in that file should be private.
